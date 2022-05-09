@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
+  <title>basic image editor</title>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="header">
+      <h1>Basic Image Editor</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat magni provident reprehenderit ipsa repudiandae. Minus eos, ratione illo atque explicabo sequi consequatur, tempora rem blanditiis vitae.</p>
+    </div>
+    <div class="box">
+      <div class="box-header">
+        <figure class="image-box">
+          <img class="image">
+        </figure>
+        <div class="button-box">
+          <input type="file" id="input-file" accept="image/*">
+          <label for="input-file" class="button">Choose An Image</label>
+        </div>
+      </div>
+      <div class="box-body">
+        <div class="form-group">
+          <label for="blur">Blur</label>
+          <input type="range" id="blur" class="input-range" min="0" max="5" value="0">
+        </div>
+        <div class="form-group">
+          <label for="contrast">Contrast</label>
+          <input type="range" id="contrast" class="input-range" min="0" max="200" value="100">
+        </div>
+        <div class="form-group">
+          <label for="hue">Hue Rotate</label>
+          <input type="range" id="hue" class="input-range" min="0" max="360" value="0">
+        </div>
+        <div class="form-group">
+          <label for="sepia">Sepia</label>
+          <input type="range" id="sepia" class="input-range" min="0" max="100" value="0">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="./script.js"></script>
+</body>
+</html>
